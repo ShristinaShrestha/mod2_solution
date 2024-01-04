@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+p{
+    margin: 10px;
+    margin-top:40px;
+}
+
+.container {
+    
+    margin: 10px;
+    overflow: hidden;
+}
+.topic{
+    border:1px solid black;
+}
+
+.box1,.box2,.box3 {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border:  1px solid rgb(42, 39, 39);
+    margin-bottom: 20px;
+    background-color:lightblue; 
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.topic {
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    background-color: teal; 
+    color: white; 
+    border-bottom: 1px solid rgb(42, 39, 39);
+}
+
+/* Media Queries for Responsive Design */
+@media(max-width:767px){
+    
+    .topic{
+        width: 40%;
+        float:right;
+        
+    }
+    
+    .box1{
+        
+        width: 98%;
+        margin: 5px;
+        
+    }
+    .box2{
+        
+        width: 98%;
+        margin: 5px;
+    }
+    .box3{
+        
+        width:98%;
+        margin:5px;
+        
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .topic{
+        width: 40%;
+        float:right;
+        
+    }
+    
+    .box1{
+        float:left;
+        width: 45%;
+        margin: 5px;
+        
+    }
+    .box2{
+        float:right;
+        width: 45%;
+        margin: 5px;
+    }
+    .box3{
+        
+        width:99%;
+        margin:5px;
+        
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1900px) {
+    .container{
+        display: flex;
+     
+    }
+
+
+    .topic {
+        width: 40%;
+        float: right;
+    }
+
+    .box1, .box2, .box3 {
+        
+        width: 30%; 
+        margin: 0 auto;
+        align-items: center; 
+        box-sizing: border-box;
+        
+    }
+    .box1{
+        float: left;
+    }
+    .box2{
+        float:none;
+        margin: 0 auto;
+        
+    }
+    .box3{
+        float: right;
+    }
+    
+
+    
+
+    
+    
+}
+
